@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+}
+
+body * {
+box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginesquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginimagem{
+    width: 35vw;
+}
+.logo{
+    width: 220px;
+    height: auto;
+}
+
+.logindireita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardlogin{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #F40C34;
+    border-radius: 20px;
+}
+ 
+.campodetexto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.campodetexto > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+.campodetexto > label{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.campodetexto > input ::placeholder{
+    color: white;
+}
+.btnlogin{
+    width: 100px;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #F40C34;
+}
+p{
+    color: white;
+}
+a {
+   color: yellow;
+}
+@media only screen and (max-width:950px){
+    .cardlogin{
+        width: 85%;
+    }
+        .loginimagem{
+            display: none;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .loginesquerda{
+        width: 100%;
+        height: auto;
+    }
+    .logindireita{
+        width: 100%;
+        height: auto;
+    }
+    
+    }
+}
